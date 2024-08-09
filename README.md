@@ -1,0 +1,35 @@
+<h2>Genetic Algorithms</h2>
+
+<u>**Components of Algorithms**</u>
+
++ Selection
++ Crossover
++ Mutation(Value Based)
+
+<u>**Parameters of Algorithms**</u>
+
++ Population Size
++ Dimension
++ Lower Bound
++ Upper Bound
++ Crossover Rate
++ Mutation
+    + Rate
+    + Delta
++ Iteration Bound
+
+<u>**Benchmark Results**</u>
+
+```r
+GA(500, 8, -5, 5, .95, .05, .01, 100)
+```
+
+Objective Function:
+
+$$MinZ = \sum_{i=1}^8 x_{i}^2$$
+
+| Selection Type | Descriptive Statistics | Time |
+| --- | --- | --- |
+| Roulette | Mean: $6.06*10^{-6}$ <br> Variance: $8.20*10^{-11}$ <br> Max: $6.83*10^{-5}$ | $3.38$ mins
+| Rank  | Mean: $1.24*10^{-5}$ <br> Variance: $5.58*10^{-11}$ <br> Max: $3.67*10^{-5}$ | $3.77$ mins
+| Hybrid <br> (Rank + Roulette)  | Mean: $3.28*10^{-6}$ <br> Variance: $5.85*10^{-12}$ <br> Max: $1.34*10^{-5}$ | $3.26$ mins
