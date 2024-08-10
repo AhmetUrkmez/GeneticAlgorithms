@@ -1,12 +1,16 @@
-<h2>Genetic Algorithms</h2>
+## Genetic Algorithms
 
-<u>**Components of Algorithm**</u>
+**Objective Function**
+
+$MinZ = \sum_{i=1}^8 x_{i}^2$
+
+**Components of Algorithm**
 
 + Selection
 + Crossover
 + Mutation(Value Based)
 
-<u>**Parameters of Algorithm**</u>
+**Parameters of Algorithm**
 
 + Population Size
 + Dimension
@@ -18,15 +22,11 @@
     + Delta
 + Iteration Bound
 
-<u>**Benchmark Results**</u>
+**Benchmark Results**
 
 ```r
 GA(500, 8, -5, 5, 0.95, 0.05, 0.01, 100)
 ```
-
-Objective Function:
-
-$$MinZ = \sum_{i=1}^8 x_{i}^2$$
 
 | Selection Type | Descriptive Statistics | Time |
 | --- | --- | --- |
