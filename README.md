@@ -1,12 +1,12 @@
 <h2>Genetic Algorithms</h2>
 
-<u>**Components of Algorithms**</u>
+<u>**Components of Algorithm**</u>
 
 + Selection
 + Crossover
 + Mutation(Value Based)
 
-<u>**Parameters of Algorithms**</u>
+<u>**Parameters of Algorithm**</u>
 
 + Population Size
 + Dimension
