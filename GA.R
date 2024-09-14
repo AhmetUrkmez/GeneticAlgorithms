@@ -46,15 +46,15 @@ RankSelection <- function(objective, population, N, d) {
 CrossOver <- function(offspring, N, d, p.cross) {
     pairs <- sample(N)
 
-    for(i in 1: (N / 2)) {
-        parent1 <- offspring[pairs[2*i-1], ]
+    for(i in 1: (N/2)) {
+        parent1 <- offspring[pairs[2*i - 1], ]
         parent2 <- offspring[pairs[2*i], ]
         if (runif(1) < p.cross) {
             c.point <- sample(d - 1, 1)
             dummy <- parent1[(c.point + 1): d]
             parent1[(c.point + 1): d] <- parent2[(c.point + 1): d]
             parent2[(c.point + 1): d] <- dummy
-            offspring[pairs[2*i-1], ] <- parent1
+            offspring[pairs[2*i - 1], ] <- parent1
             offspring[pairs[2*i], ] <- parent2
         }
     }
@@ -142,7 +142,7 @@ Benchmark <- function(...) {
     return(list("mean.fitness" = mean(fitness_values),
                 "var.fitness" = var(fitness_values),
                 "max.fitness" = max(fitness_values),
-                "time" = c(end-start)))
+                "time" = c(end - start)))
 }
 
 Benchmark()
